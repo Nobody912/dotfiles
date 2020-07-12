@@ -1,0 +1,1 @@
+/Users/erikji/.p10k.zsh
