@@ -1,1 +1,15 @@
-/Users/erikji/.skhdrc
+# window management
+alt - up : yabai -m window --toggle float
+
+# space management
+alt - down : yabai -m space --rotate 90
+alt - 0 : yabai -m space --balance
+
+# yabai management
+alt - r : brew services restart yabai
+
+# open iTerm2 (script to prevent duplicate applications)
+alt - return : sh /Users/ErikJi/scripts/open_iterm2.sh
+
+# toggle menubar
+alt - tab : skhd -k "ctrl - f2"
