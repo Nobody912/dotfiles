@@ -19,7 +19,6 @@
 
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-      os_icon                 # os identifier
       context                 # user@hostname
       dir                     # current directory
       vcs                     # git status
@@ -90,13 +89,6 @@
   # Left prompt terminator for lines without any segments.
   typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=
 
-  #################################[ os_icon: os identifier ]##################################
-  # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND='#2e3440'
-  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND='#5e81ac'
-  # Make the icon bold.
-  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='%B${P9K_CONTENT}'
-
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_BACKGROUND=
@@ -122,7 +114,7 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  # typeset -g POWERLEVEL9K_DIR_BACKGROUND='blue'
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND='cyan'
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND='black'
   # If directory is too long, shorten some of its segments to the shortest possible unique

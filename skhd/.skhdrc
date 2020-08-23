@@ -1,5 +1,6 @@
 # window management
 alt - up : yabai -m window --toggle float
+alt - f : yabai -m window --toggle native-fullscreen
 
 # space management
 alt - down : yabai -m space --rotate 90

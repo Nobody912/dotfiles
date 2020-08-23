@@ -3,7 +3,7 @@
 # global settings
 # mouse
 yabai -m config mouse_follows_focus          off
-yabai -m config focus_follows_mouse          off
+yabai -m config focus_follows_mouse          autofocus
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
 yabai -m config mouse_action2                resize
@@ -30,7 +30,7 @@ yabai -m config insert_feedback_color        0xaad75f5f
 
 # spaces
 yabai -m config layout                       bsp
-yabai -m config top_padding                  50
+yabai -m config top_padding                  10
 yabai -m config bottom_padding               10
 yabai -m config left_padding                 10
 yabai -m config right_padding                10
@@ -38,6 +38,9 @@ yabai -m config window_gap                   10
 
 # workspace update for uebersicht
 # doesn't work :/
+
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Digital Color Meter$" manage=off
 
 yabai -m space --balance
 echo "yabai configuration loaded.."
