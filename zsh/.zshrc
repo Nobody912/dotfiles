@@ -35,6 +35,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # zprof
 export PATH="/usr/local/sbin:$PATH"
 
+# sptlrx
+# export SPOTIFY_COOKIE="290acc912619c829341419b5500097ee"
+
 # sphinx-doc
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 
@@ -47,9 +50,7 @@ eval "$(thefuck --alias "frick")"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias python=python3
-
-export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval $(thefuck --alias)
 
 ### END USER CONFIGURATION ###
+

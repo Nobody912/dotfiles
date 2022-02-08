@@ -204,9 +204,10 @@
   #   typeset -g POWERLEVEL9K_DIR_WORK_ANCHOR_FOREGROUND=255
   #
   typeset -g POWERLEVEL9K_DIR_CLASSES=(
-    '~/scripts(/*)#'	SCRIPTS  ''
-    '~(/*)#'       	HOME     ''
-    '*'            	DEFAULT  ''
+    '~/scripts(/*)#'	SCRIPTS  	''
+	'~/Downloads(/*)#'	DOWNLOADS	''
+    '~(/*)#'       		HOME     	''
+    '*'            		DEFAULT  	''
   )
 
   typeset -g POWERLEVEL9K_DIR_HOME_FOREGROUND='black'

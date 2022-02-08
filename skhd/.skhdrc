@@ -1,16 +1,11 @@
-# window management
-alt - up : yabai -m window --toggle float
-alt - f : yabai -m window --toggle native-fullscreen
+# amethyst management
+#alt - r : skhd -k "ctrl + alt + shift - z"
+#alt - space : skhd -k "alt + shift - t"
 
-# space management
-alt - down : yabai -m space --rotate 90
-alt - 0 : yabai -m space --balance
+alt - r : brew  services restart yabai
+alt - left : skhd -k "ctrl - left"
+alt - right : skhd -k "ctrl - right"
 
-# yabai management
-alt - r : brew services restart yabai
 
 # open iTerm2 (script to prevent duplicate applications)
 alt - return : sh /Users/ErikJi/scripts/open_iterm2.sh
-
-# toggle menubar
-alt - tab : skhd -k "ctrl - f2"
