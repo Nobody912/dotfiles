@@ -5,7 +5,7 @@
 alt - r : brew  services restart yabai
 alt - left : skhd -k "ctrl - left"
 alt - right : skhd -k "ctrl - right"
-
+alt - space : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
 
 # open iTerm2 (script to prevent duplicate applications)
 alt - return : sh /Users/ErikJi/scripts/open_iterm2.sh

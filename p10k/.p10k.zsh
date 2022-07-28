@@ -114,7 +114,7 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND='cyan'
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND='#81a1c1'
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND='black'
   # If directory is too long, shorten some of its segments to the shortest possible unique
@@ -211,7 +211,7 @@
   )
 
   typeset -g POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
-  typeset -g POWERLEVEL9K_DIR_HOME_BACKGROUND='cyan'
+  typeset -g POWERLEVEL9K_DIR_HOME_BACKGROUND='#81a1c1'
 
   #####################################[ vcs: git status ]######################################
   # Version control system colors.
@@ -373,7 +373,7 @@
   ##################################[ context: user@hostname ]##################################
   # Default context color.
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND='black'
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND='blue'
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND='#88c0d0'
   # Default context format: %n is username, %m is hostname.
   typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
 

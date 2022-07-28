@@ -17,9 +17,9 @@ yabai -m config auto_balance                 on
 
 # opacity
 yabai -m config window_opacity               on
-yabai -m config window_opacity_duration      0.5
+#yabai -m config window_opacity_duration     4.0
 yabai -m config active_window_opacity        1.0
-yabai -m config normal_window_opacity        0.825
+yabai -m config normal_window_opacity        0.1
 
 # border
 yabai -m config window_border                off
@@ -39,9 +39,11 @@ yabai -m config window_gap                   15
 # workspace update for uebersicht
 # doesn't work :/
 
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Digital Color Meter$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off layer=above
+yabai -m rule --add app="^Digital Color Meter$" manage=off layer=above
 yabai -m rule --add app="^IINA$" manage=off
+yabai -m rule --add app="^coconutBattery$" manage=off layer=above
+yabai -m rule --add app="^Stickies" manage=off layer=above
 
 yabai -m space --balance
 echo "yabai configuration loaded.."

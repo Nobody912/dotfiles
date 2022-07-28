@@ -42,7 +42,10 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 
 # fortune quotes
-echo "\e[3m$(fortune)\e[0m\n"
+#echo "\e[3m$(fortune)\e[0m\n"
+
+# cbonsai
+cbonsai
 
 # thefuck config
 eval "$(thefuck --alias "frick")"
